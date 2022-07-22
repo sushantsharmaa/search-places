@@ -8,10 +8,10 @@ const initialState = {
 
 var options = {
   method: "GET",
-  url: process.env.REACT_APP_URL,
+  url: "https://wft-geo-db.p.rapidapi.com/v1/geo/cities",
   params: { countryIds: "IN", namePrefix: "del", limit: "5" },
   headers: {
-    "x-rapidapi-host": process.env.REACT_APP_HOST,
+    "x-rapidapi-host": "wft-geo-db.p.rapidapi.com",
     "x-rapidapi-key": process.env.REACT_APP_API_KEY,
   },
 };
