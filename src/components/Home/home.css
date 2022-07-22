@@ -1,13 +1,13 @@
 .home {
   width: 80%;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 50px;
   padding: 20px;
   border: 1px solid lightgrey;
 }
 
 .search {
-  padding: 5px 0px 5px 0px;
+  padding: 10px px 10px 0px;
 }
 
 input {
@@ -31,6 +31,8 @@ input:disabled {
 
 .pagination {
   padding-top: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .paginationBttns {

@@ -8,7 +8,7 @@ const Home = ({ cities }) => {
   const [pageNumber, setPageNumber] = useState(0);
   const keys = ["name"];
 
-  const citiesPerPage = 5;
+  const citiesPerPage = 3;
   const citiesVisited = pageNumber * citiesPerPage;
   const pageCount = Math.ceil(cities.length / citiesPerPage);
 
