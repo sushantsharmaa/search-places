@@ -1,0 +1,60 @@
+.home {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid lightgrey;
+}
+
+.search {
+  padding: 5px 0px 5px 0px;
+}
+
+input {
+  width: 241px;
+  height: 38px;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 6px 0px 6px 12px;
+  border: 1px solid rgb(206, 212, 218);
+  background-color: rgb(255, 255, 255);
+}
+
+input:focus {
+  border-color: #7952b3;
+  box-shadow: 0 0 0 3px rgb(121 82 179 / 25%);
+}
+
+input:disabled {
+  background-color: rgb(233, 236, 239);
+}
+
+.pagination {
+  padding-top: 10px;
+}
+
+.paginationBttns {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.paginationBttns a {
+  padding: 10px;
+  margin: 8px;
+  border-radius: 50%;
+  color: white;
+  background-color: #7952b3;
+  cursor: pointer;
+}
+
+.paginationActive a {
+  color: #7952b3;
+  border: 1px solid #7952b3;
+  background-color: white;
+}
+
+.paginationDisabled a {
+  color: white;
+  background-color: lightgray;
+}
