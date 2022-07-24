@@ -3,12 +3,12 @@ import { useEffect, useState } from "react";
 import Home from "./components/Home/Home";
 
 function App() {
-  const [cities, setCities] = useState();
+  const [cities, setCities] = useState([]);
 
   var options = {
     method: "GET",
     url: "https://wft-geo-db.p.rapidapi.com/v1/geo/cities",
-    params: { countryIds: "IN", namePrefix: "del", limit: "12" },
+    params: { countryIds: "IN", namePrefix: "del", limit: "10" },
     headers: {
       "x-rapidapi-host": "wft-geo-db.p.rapidapi.com",
       "x-rapidapi-key": process.env.REACT_APP_API_KEY,

@@ -1,5 +1,5 @@
-import React, { useState } from "react";
 import "./home.css";
+import { useState } from "react";
 import Table from "../Table/Table";
 import ReactPaginate from "react-paginate";
 
@@ -13,7 +13,9 @@ const Home = ({ cities }) => {
   const pageCount = Math.ceil(cities.length / citiesPerPage);
 
   const search = (data) => {
-    return data.filter((item) => keys.some((key) => item[key].includes(query)));
+    return data.filter((item) =>
+      keys.some((key) => item[key].toLowerCase().includes(query))
+    );
   };
 
   const changePage = ({ selected }) => {
